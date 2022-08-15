@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-
+//class of our app for db
 class Todo {
   int? id;
   final String title;
