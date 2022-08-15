@@ -21,7 +21,8 @@ class DatabaseConnect {
   }
 
   Future<void> _createDB(Database db, int version) async {
-    await db.execute('''CREATE TABLE todo(
+    await db.execute('''
+      CREATE TABLE todo(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       title TEXT,
       isChecked INTEGER
